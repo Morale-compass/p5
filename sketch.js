@@ -8,7 +8,7 @@ let cat;
 let toggle;
 //
 function preload () {
-	cat = loadImage ('./pippin.png')
+	cat = loadImage ('./pippin.png');
 }
 // everything here is loaded once only
 function setup() {
@@ -65,17 +65,17 @@ function draw() {
   	speedX = speedX * -1;
   }
   if (positionY >= 295 || positionY <= 45) {
-  	speedY = speedY * -1
+  	speedY = speedY * -1;
   }
 
 //flicky boi
- if ( toggle=== true) { fill ( 154, 211, 14)}
- 	else { fill (211, 33, 112)}
+ if ( toggle=== true) { fill ( 154, 211, 14);}
+ 	else { fill (211, 33, 112);}
   textSize (50);
  text ( 'hello world', 300,300);
 
-fill (224, 255, 0)
-quad (30, 30, 40, 50, 100, 30, 300, 100)
+fill (224, 255, 0);
+quad (30, 30, 40, 50, 100, 30, 300, 100);
 let x1 = map(mouseX, 0, width, 60, 300);
 let y1 = map(mouseY, 0, width, 75, 600);
 fill (191, 53, 228);
@@ -83,8 +83,8 @@ ellipse(x1, y1, 80, 50);
 
 if (focused) {
 	
- 	fill (random(255),random(255),random(255))
- 	ellipse(mouseX, mouseY, 200, 10)}
+ 	fill (random(255),random(255),random(255));
+ 	ellipse(mouseX, mouseY, 200, 10);}
 
 }
 
@@ -98,8 +98,8 @@ function mousePressed() {
 	for (let i = 50; i < 550; i+= 30) {
 		for (let j = 50; j < 550; j+=20) {
 			if (toggle === true) {
-				fill (random(255),random(255),random(255))}
-				else {fill(500)}
+				fill (random(255),random(255),random(255));}
+				else {fill(500);}
 			
 		let r = random(60);
 		circle (i, j, r);
